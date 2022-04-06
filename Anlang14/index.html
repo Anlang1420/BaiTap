@@ -1,0 +1,103 @@
+<script>
+    //Lang Thi Thuy An
+    // câu 1
+    function FindNearestNumber(a,b){
+        let numberOne = 100 - a;
+        let numberTwo = 100 - b;
+        if(numberOne > numberTwo){
+            return b;
+        }
+        return a;
+    }
+    console.log(FindNearestNumber(97,98))
+    // Câu 2
+    function CheckNumberInRange(a,b){
+        if(a >= 40 && b <=60 && b >= 40 && a <= 60){
+            return "A,B nằm trong phạm vi 40...60";
+        }
+        else if(a >= 70 && b<=100 && b >= 70 && a <= 100){
+            return "A,B nằm trong phạm vi 70...100";
+        }
+        else{
+            return "A,B không nằm trong phạm vi 40...60 và không nằm trong phạm vi 70...100";
+        }
+    }
+    console.log(CheckNumberInRange(50,59));
+    // câu 3
+    function CheckCharacter(a){
+        let CertainString = "LangThiThuyAn"; 
+
+        if(CertainString.includes(a,2) || CertainString.includes(a,3) || CertainString.includes(a,4)){
+            return true;
+        }
+        return false;
+    }
+    console.log(CheckCharacter("a"));
+    console.log(CheckCharacter("n"));
+    // Câu 4
+        function TotalNumber(a,b) {
+        let sum = a+b;
+        if(sum >= 50 && sum <=80){
+            return 65;
+        }
+        return 80;
+    }
+    console.log(TotalNumber(0,49))
+    console.log(TotalNumber(50,10))
+    // Câu 5. 
+      function DuplicateCharacter(){
+        str = "nguyenvana";
+        return str.charAt(str.length-1)+str.charAt(str.length-2)+str.charAt(str.length-3);
+    }
+    for(let i =0; i< 3;i++){
+        console.log(DuplicateCharacter());
+    }
+    // Câu 6
+        let a ="1LangThiThuyAn4";
+    console.log(a.slice(1,14))
+    // Câu 7
+    function sumArray(mang){
+      let sum = 0;
+         for (let i = 0; i < mang.length; i++){
+        sum += mang[i];
+    }
+    return sum;
+}
+    // Câu 8
+    var arrayA = [10,25,35]
+    var arrayB = [32,15,05]
+    var arrayC = []
+    
+    arrayA.pop()
+    arrayA.shift()
+    arrayB.pop()
+    arrayB.shift()
+    arrayC.push(arrayA[0],arrayB[0])
+    
+        console.log(arrayC)
+    // Câu 9
+    let num = [10, 100, 99, 60, 50, 80, 30];
+console.log("Pt đầu tiên và cuối cùng:"+ num[0], num[num.length-1]);
+    // Câu 10
+    function Check(x){
+        let a= 10;
+        let b = 20;
+        let c = 30;
+        if(x == "+" && (c === (a+b))){
+            return true;
+        }
+        else if(x == "-" && (c === (a-b))){
+            return true;
+        }
+        else if(x == "*" && (c === (a*b))){
+            return true;
+        }
+        else if(x == "/" && (c === (a/b))){
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+    console.log(Check("+"));
+</script>
